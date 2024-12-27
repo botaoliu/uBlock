@@ -1,0 +1,331 @@
+max_no_of_threads   % maximum number of threads *for parallel operation*
+16
+
+no_of_groups % number of groups to conduct the test, e.g., fixed vs. fixed, fixed vs. random, etc.
+2
+
+256'h00000000000000000000000000000000$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+256'h0000000000000000000000000000000000000000000000000000000000000000
+
+clock_signal_name    % name of the clock signal
+clk
+
+max_clock_cycle   % maximum number of clock cycles per run before checking the end_condition
+100
+
+no_of_always_random_inputs % number of inputs which are fed randomly at every clock cycle  
+0
+ 
+no_of_initial_inputs   % number of primary inputs during the initialization
+6
+
+no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start of encryption)
+35
+
+[3:0]   data_in_share0    4'h0
+[3:0]   data_in_share1    4'h0
+[3:0]   key_in_share0     4'h0
+[3:0]   key_in_share1     4'h0
+        rst   1'b0
+        en 1'b0 
+        		
+       
+[3:0]   data_in_share0    4'h0
+[3:0]   data_in_share1    4'h0
+[3:0]   key_in_share0     4'h0
+[3:0]   key_in_share1     4'h0
+        rst   1'b1
+        en 1'b0
+        		
+       
+[3:0]   data_in_share0    group_in0[3:0]
+[3:0]   data_in_share1    group_in1[3:0]
+[3:0]   key_in_share0     group_in0[131:128]
+[3:0]   key_in_share1     group_in1[131:128]
+        rst   1'b1
+        en 1'b1		
+
+[3:0]   data_in_share0    group_in0[7:4]
+[3:0]   data_in_share1    group_in1[7:4]
+[3:0]   key_in_share0     group_in0[135:132]
+[3:0]   key_in_share1     group_in1[135:132]
+        rst   1'b1
+        en 1'b0	
+
+[3:0]   data_in_share0    group_in0[11:8]
+[3:0]   data_in_share1    group_in1[11:8]
+[3:0]   key_in_share0     group_in0[139:136]
+[3:0]   key_in_share1     group_in1[139:136]
+        rst   1'b1
+        en 1'b0
+		
+[3:0]   data_in_share0    group_in0[15:12]
+[3:0]   data_in_share1    group_in1[15:12]
+[3:0]   key_in_share0     group_in0[143:140]
+[3:0]   key_in_share1     group_in1[143:140]
+        rst   1'b1
+        en 1'b0
+        		
+       
+[3:0]   data_in_share0    group_in0[19:16]
+[3:0]   data_in_share1    group_in1[19:16]
+[3:0]   key_in_share0     group_in0[147:144]
+[3:0]   key_in_share1     group_in1[147:144]
+        rst   1'b1
+        en 1'b0
+
+[3:0]   data_in_share0    group_in0[23:20]
+[3:0]   data_in_share1    group_in1[23:20]
+[3:0]   key_in_share0     group_in0[151:148]
+[3:0]   key_in_share1     group_in1[151:148]
+        rst   1'b1
+        en 1'b0
+        		
+       
+[3:0]   data_in_share0    group_in0[27:24]
+[3:0]   data_in_share1    group_in1[27:24]
+[3:0]   key_in_share0     group_in0[155:152]
+[3:0]   key_in_share1     group_in1[155:152]
+        rst   1'b1
+        en 1'b0
+        		
+[3:0]   data_in_share0    group_in0[31:28]
+[3:0]   data_in_share1    group_in1[31:28]
+[3:0]   key_in_share0     group_in0[159:156]
+[3:0]   key_in_share1     group_in1[159:156]
+        rst   1'b1
+        en 1'b0
+       
+[3:0]   data_in_share0    group_in0[35:32]
+[3:0]   data_in_share1    group_in1[35:32]
+[3:0]   key_in_share0     group_in0[163:160]
+[3:0]   key_in_share1     group_in1[163:160]
+        rst   1'b1
+        en 1'b0  
+        		
+[3:0]   data_in_share0    group_in0[39:36]
+[3:0]   data_in_share1    group_in1[39:36]
+[3:0]   key_in_share0     group_in0[167:164]
+[3:0]   key_in_share1     group_in1[167:164]
+        rst   1'b1
+        en 1'b0  
+       
+[3:0]   data_in_share0    group_in0[43:40]
+[3:0]   data_in_share1    group_in1[43:40]
+[3:0]   key_in_share0     group_in0[171:168]
+[3:0]   key_in_share1     group_in1[171:168]
+        rst   1'b1
+        en 1'b0    
+
+[3:0]   data_in_share0    group_in0[47:44]
+[3:0]   data_in_share1    group_in1[47:44]
+[3:0]   key_in_share0     group_in0[175:172]
+[3:0]   key_in_share1     group_in1[175:172]
+        rst   1'b1
+        en 1'b0   
+        		
+       
+[3:0]   data_in_share0    group_in0[51:48]
+[3:0]   data_in_share1    group_in1[51:48]
+[3:0]   key_in_share0     group_in0[179:176]
+[3:0]   key_in_share1     group_in1[179:176]
+        rst   1'b1
+        en 1'b0   
+
+[3:0]   data_in_share0    group_in0[55:52]
+[3:0]   data_in_share1    group_in1[55:52]
+[3:0]   key_in_share0     group_in0[183:180]
+[3:0]   key_in_share1     group_in1[183:180]
+        rst   1'b1
+        en 1'b0  	    
+       
+[3:0]   data_in_share0    group_in0[59:56]
+[3:0]   data_in_share1    group_in1[59:56]
+[3:0]   key_in_share0     group_in0[187:184]
+[3:0]   key_in_share1     group_in1[187:184]
+        rst   1'b1
+        en 1'b0   
+
+[3:0]   data_in_share0    group_in0[63:60]
+[3:0]   data_in_share1    group_in1[63:60]
+[3:0]   key_in_share0     group_in0[191:188]
+[3:0]   key_in_share1     group_in1[191:188]
+        rst   1'b1
+        en 1'b0 	    
+       
+[3:0]   data_in_share0    group_in0[67:64]
+[3:0]   data_in_share1    group_in1[67:64]
+[3:0]   key_in_share0     group_in0[195:192]
+[3:0]   key_in_share1     group_in1[195:192]
+        rst   1'b1
+        en 1'b0   
+
+[3:0]   data_in_share0    group_in0[71:68]
+[3:0]   data_in_share1    group_in1[71:68]
+[3:0]   key_in_share0     group_in0[199:196]
+[3:0]   key_in_share1     group_in1[199:196]
+        rst   1'b1
+        en 1'b0   	    
+       
+[3:0]   data_in_share0    group_in0[75:72]
+[3:0]   data_in_share1    group_in1[75:72]
+[3:0]   key_in_share0     group_in0[203:200]
+[3:0]   key_in_share1     group_in1[203:200]
+        rst   1'b1
+        en 1'b0   
+
+[3:0]   data_in_share0    group_in0[79:76]
+[3:0]   data_in_share1    group_in1[79:76]
+[3:0]   key_in_share0     group_in0[207:204]
+[3:0]   key_in_share1     group_in1[207:204]
+        rst   1'b1
+        en 1'b0  	    
+       
+[3:0]   data_in_share0    group_in0[83:80]
+[3:0]   data_in_share1    group_in1[83:80]
+[3:0]   key_in_share0     group_in0[211:208]
+[3:0]   key_in_share1     group_in1[211:208]
+        rst   1'b1
+        en 1'b0   
+
+[3:0]   data_in_share0    group_in0[87:84]
+[3:0]   data_in_share1    group_in1[87:84]
+[3:0]   key_in_share0     group_in0[215:212]
+[3:0]   key_in_share1     group_in1[215:212]
+        rst   1'b1
+        en 1'b0  	    
+       
+[3:0]   data_in_share0    group_in0[91:88]
+[3:0]   data_in_share1    group_in1[91:88]
+[3:0]   key_in_share0     group_in0[219:216]
+[3:0]   key_in_share1     group_in1[219:216]
+        rst   1'b1
+        en 1'b0   
+		
+[3:0]   data_in_share0    group_in0[95:92]
+[3:0]   data_in_share1    group_in1[95:92]
+[3:0]   key_in_share0     group_in0[223:220]
+[3:0]   key_in_share1     group_in1[223:220]
+        rst   1'b1
+        en 1'b0 
+	    
+[3:0]   data_in_share0    group_in0[99:96]
+[3:0]   data_in_share1    group_in1[99:96]
+[3:0]   key_in_share0     group_in0[227:224]
+[3:0]   key_in_share1     group_in1[227:224]
+        rst   1'b1
+        en 1'b0   
+
+[3:0]   data_in_share0    group_in0[103:100]
+[3:0]   data_in_share1    group_in1[103:100]
+[3:0]   key_in_share0     group_in0[231:228]
+[3:0]   key_in_share1     group_in1[231:228]
+        rst   1'b1
+        en 1'b0   	    
+       
+[3:0]   data_in_share0    group_in0[107:104]
+[3:0]   data_in_share1    group_in1[107:104]
+[3:0]   key_in_share0     group_in0[235:232]
+[3:0]   key_in_share1     group_in1[235:232]
+        rst   1'b1
+        en 1'b0   
+
+[3:0]   data_in_share0    group_in0[111:108]
+[3:0]   data_in_share1    group_in1[111:108]
+[3:0]   key_in_share0     group_in0[239:236]
+[3:0]   key_in_share1     group_in1[239:236]
+        rst   1'b1
+        en 1'b0	    
+       
+[3:0]   data_in_share0    group_in0[115:112]
+[3:0]   data_in_share1    group_in1[115:112]
+[3:0]   key_in_share0     group_in0[243:240]
+[3:0]   key_in_share1     group_in1[243:240]
+        rst   1'b1
+        en 1'b0   
+
+[3:0]   data_in_share0    group_in0[119:116]
+[3:0]   data_in_share1    group_in1[119:116]
+[3:0]   key_in_share0     group_in0[247:244]
+[3:0]   key_in_share1     group_in1[247:244]
+        rst   1'b1
+        en 1'b0	    
+       
+[3:0]   data_in_share0    group_in0[123:120]
+[3:0]   data_in_share1    group_in1[123:120]
+[3:0]   key_in_share0     group_in0[251:248]
+[3:0]   key_in_share1     group_in1[251:248]
+        rst   1'b1
+        en 1'b0   
+
+[3:0]   data_in_share0    group_in0[127:124]
+[3:0]   data_in_share1    group_in1[127:124]
+[3:0]   key_in_share0     group_in0[255:252]
+[3:0]   key_in_share1     group_in1[255:252]
+        rst   1'b1
+        en 1'b0 	    
+       
+[3:0]   data_in_share0    4'h0
+[3:0]   data_in_share1    4'h0
+[3:0]   key_in_share0     4'h0
+[3:0]   key_in_share1     4'h0
+        rst   1'b1
+        en 1'b0   
+	    
+       
+       
+       
+end_condition    % the condition to check to terminate the simulation (e.g., done signal is high)
+                 % or a numer of clock cycles, e.g., ClockCycles 5
+%DONE 1'b1
+%[31:0]  y    32'h89ABCE00
+ClockCycles 100
+
+end_wait_cycles   % number of clock cycles to wait after the end_condition 
+0
+
+order_of_test % maximum number of probes, i.e., order of test
+1
+
+multivariate_test % no: only univariate test should be done, yes: univariate + multivariate
+no
+
+transitional_leakage % yes/no: whether transitional leakage should be considered in the tests
+yes
+
+compact_distributions % yes/no: whether distributions (of probes) should be considered as compact. 
+                      % it is recommended to use 'no' only for small circuits and low security orders
+no
+
+minimize_probe_sets   % yes/no: whether it should be tried to find equivalent probing sets.
+                      % it is recommended to use 'yes' only for small circuits and low security orders
+yes
+
+no_of_probing_sets_per_step
+
+2500
+
+no_of_test_clock_cycles % number of blocks to define clock cycles which should be covered in the tests
+1
+
+1-50  % clock cycle 19-24
+
+no_of_simulations % total number of simulations (traces) in the tests, should be a factor of 64
+153600
+
+no_of_step_simulations % number of simulations in each step, should be a factor of 64, and a divisor of no_of_simulations
+12800
+
+no_of_step_write_results % number of simulations in each step that result files are written, 
+                         % should be a factor of 64, and a divisor of no_of_simulations and
+                         % should be a factor of no_of_step_simulations
+12800
+
+no_of_entries_in_report  % max number of entries in the report file with maximum leakage
+10                       % 0 : do not generate the report file
+
+probes_exclude   % those wires which should be exclused for probing (all : to exclude them all, 0 : to exclude none, e.g., 2 : to exclude two and name them) 
+0
+
+probes_include   % those wires which should be included for probing (all : to include them all, 0 : to include none, e.g., 2 : to inlcude two and name them)  
+all
